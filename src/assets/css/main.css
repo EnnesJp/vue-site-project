@@ -1,0 +1,34 @@
+@import './base.css';
+
+input {
+  display: flex;
+  padding: 11px 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 2px solid var(--color-input-border);
+  background: var(--color-input-background);
+}
+
+.btn {
+  border-radius: 4px;
+  display: flex;
+  padding: 10px 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--color-nav-text);
+}
+
+.btn-primary {
+  background: var(--color-background-btn-primary);
+}
+
+.btn-secondary {
+  background: var(--color-background-btn-secondary);
+}
