@@ -7,7 +7,7 @@ import ArrowIcon from '../icons/arrow.vue';
     <div class="info-section">
       <h1 class="info-section-title">Chats for your distributed teams</h1>
       <span class="info-section-description">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</span>
-      <div class="info-section-link">
+      <div class="learn-more-link">
         <a href="/about">Learn more</a>
         <ArrowIcon/>
       </div>
@@ -16,12 +16,23 @@ import ArrowIcon from '../icons/arrow.vue';
   </div>
 </template>
 
+<script>
+
+export default {
+  name: 'HomeInfoSection',
+  components: {
+    ArrowIcon
+  }
+}
+
+</script>
+
 <style scoped>
 
 .container {
   display: flex;
-  padding: 80px 0 80px 140px;
-  justify-content: flex-end;
+  padding: 80px 0 80px 250px;
+  justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
 }
@@ -41,26 +52,10 @@ import ArrowIcon from '../icons/arrow.vue';
 
 .container .info-section .info-section-description {
   color: var(--color-text);
-  font-family: Lexend Deca;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-}
-
-.container .info-section .info-section-link {
-  margin-top: 46px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.container .info-section .info-section-link a {
-  color: var(--color-link);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
 }
 
 </style>

@@ -32,3 +32,18 @@ input {
 .btn-secondary {
   background: var(--color-background-btn-secondary);
 }
+
+.learn-more-link {
+  margin-top: 46px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.learn-more-link a {
+  color: var(--color-link);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}

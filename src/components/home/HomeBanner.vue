@@ -22,7 +22,7 @@
   background-position: center;
   height: 100vh;
   width: 100vw;
-  padding: 250px 140px;
+  padding: 250px;
 }
 
 .container .banner-info {
