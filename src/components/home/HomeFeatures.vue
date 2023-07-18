@@ -8,10 +8,10 @@ import ArrowIcon from '../icons/arrow.vue';
       class="feature-section"
       v-for="(feature, index) in getFeatures"
       :key="index">
-      <img class="feature-section-image" :src="`src/assets/images/home/${feature.icon}`" alt="Feature Image">
+      <img class="feature-section__image" :src="`src/assets/images/home/${feature.icon}`" alt="Feature Image">
       <div class="feature-section-info">
-        <h2 class="feature-section-info-title">{{ feature.title }}</h2>
-        <p class="feature-section-info-text">{{ feature.text }}</p>
+        <h2 class="feature-section-info__title">{{ feature.title }}</h2>
+        <p class="feature-section-info__text">{{ feature.text }}</p>
         <div class="learn-more-link">
           <a href="/about">Learn more</a>
           <ArrowIcon/>
@@ -57,28 +57,31 @@ export default {
 
 <style scoped>
 
-.container .feature-section {
+.container {
+  flex-direction: column;
+}
+
+.feature-section {
   display: flex;
-  padding: 80px 250px;
-  justify-content: space-between;
+  padding: 80px 0;
   align-items: center;
   gap: 139px;
 }
 
-.container .feature-section:nth-child(even) {
+.feature-section:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.container .feature-section .feature-section-image {
+.feature-section__image {
   max-width: 565px;
   max-height: 565px;
 
 }
-.container .feature-section .feature-section-info {
+.feature-section-info {
   max-width: 565px;
 }
 
-.container .feature-section .feature-section-info .feature-section-info-title {
+.feature-section-info__title {
   color: var(--color-heading);
   font-size: 50px;
   font-style: normal;
@@ -87,7 +90,7 @@ export default {
   margin-bottom: 24px;
 }
 
-.container .feature-section .feature-section-info .feature-section-info-text {
+.feature-section-info__text {
   color: var(--color-text);
   font-size: 18px;
   font-style: normal;

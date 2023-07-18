@@ -1,12 +1,14 @@
 <template>
-  <div class="container">
-    <div class="banner-info">
-      <h1 class="banner-info-title">Instant collaboration for remote teams</h1>
-      <span class="banner-info-description">All-in-one place for your remote team to chat, collaborate and track project progress.</span>
-      <div class="banner-register">
-        <input class="banner-register-input" type="email" placeholder="Email">
-        <div class="btn btn-secondary">
-          <RouterLink to="/register">Get Early Access</RouterLink>
+  <div class="banner">
+    <div class="container">
+      <div class="banner-info">
+        <h1 class="banner-info__title">Instant collaboration for remote teams</h1>
+        <span class="banner-info__description">All-in-one place for your remote team to chat, collaborate and track project progress.</span>
+        <div class="banner-info-register">
+          <input class="banner-info-register__input" type="email" placeholder="Email">
+          <div class="btn btn-secondary">
+            <RouterLink to="/register">Get Early Access</RouterLink>
+          </div>
         </div>
       </div>
     </div>
@@ -15,24 +17,24 @@
 
 <style scoped>
 
-.container {
+.banner {
   background-image: url(@/assets/images/home/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 800px;
   width: 100vw;
-  padding: 250px;
+  padding: 250px 0;
 }
 
-.container .banner-info {
+.banner-info {
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-width: 560px;
 }
 
-.container .banner-info .banner-info-title {
+.banner-info__title {
   color: var(--color-text-white);
   font-size: 50px;
   font-style: normal;
@@ -40,7 +42,7 @@
   line-height: 64px;
 }
 
-.container .banner-info .banner-info-description {
+.banner-info__description {
   color: var(--color-text-white);
   font-size: 18px;
   font-style: normal;
@@ -49,12 +51,12 @@
   max-width: 397px;
 }
 
-.container .banner-info .banner-register {
+.banner-info-register {
   display: flex;
   gap: 16px;
 }
 
-.container .banner-info .banner-register .banner-register-input{
+.banner-info-register__input{
   width: 298px;
 }
 

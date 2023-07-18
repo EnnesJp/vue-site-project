@@ -1,6 +1,6 @@
 <template>
-  <footer>
-    <div class="wrapper">
+  <div class="footer">
+    <div class="container">
       <div class="footer-logo">
         <img src="@/assets/images/logo.png" alt="Logo">
         <p>Collaboration platform for mordern team </p>
@@ -32,23 +32,24 @@
         <a href="#"><img src="@/assets/images/icon-instagram.svg" alt="Instagram"></a>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <style scoped>
 
-.wrapper {
+.footer {
   position: relative;
   height: 500px;
   background: var(--color-background-footer);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding-top: 73px;
+}
+
+.footer .container {
+  align-items: flex-start;
   gap: 130px;
 }
 
-.wrapper .footer-logo p{
+.footer .footer-logo p{
   color: var(--color-text-white);
   font-size: 14px;
   font-style: normal;
@@ -58,18 +59,18 @@
   max-width: 168px;
 }
 
-.wrapper .footer-links {
+.footer .footer-links {
   display: flex;
   padding-top: 22px;
   gap: 85px;
 }
 
-.wrapper .footer-links .footer-links-column {
+.footer .footer-links .footer-links-column {
   display: flex;
   flex-direction: column;
 }
 
-.wrapper .footer-links .footer-links-column .footer-links-column-title {
+.footer .footer-links .footer-links-column .footer-links-column-title {
   color: var(--color-heading-footer);
   font-size: 24px;
   font-style: normal;
@@ -78,7 +79,7 @@
   margin-bottom: 16px;
 }
 
-.wrapper .footer-links .footer-links-column .footer-links-column-link {
+.footer .footer-links .footer-links-column .footer-links-column-link {
   color: var(--color-text-white);
   font-size: 14px;
   font-style: normal;
@@ -89,7 +90,7 @@
   margin-bottom: 12px;
 }
 
-.wrapper .footer-social {
+.footer .footer-social {
   display: flex;
   gap: 12px;
 }

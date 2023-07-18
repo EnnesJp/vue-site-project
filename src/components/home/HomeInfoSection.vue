@@ -3,16 +3,20 @@ import ArrowIcon from '../icons/arrow.vue';
 </script>
 
 <template>
-  <div class="container">
-    <div class="info-section">
-      <h1 class="info-section-title">Chats for your distributed teams</h1>
-      <span class="info-section-description">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</span>
-      <div class="learn-more-link">
-        <a href="/about">Learn more</a>
-        <ArrowIcon/>
+  <div class="info-section">
+    <div class="container">
+      <div class="info-section-text">
+        <h1 class="info-section-text__title">Chats for your distributed teams</h1>
+        <span class="info-section-text__description">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</span>
+        <div class="learn-more-link">
+          <a href="/about">Learn more</a>
+          <ArrowIcon/>
+        </div>
+      </div>
+      <div class="info-section-image">
+        <img src="@/assets/images/home/info-section.png" alt="App Image">
       </div>
     </div>
-    <img src="@/assets/images/home/info-section.png" alt="App Image">
   </div>
 </template>
 
@@ -29,19 +33,15 @@ export default {
 
 <style scoped>
 
-.container {
-  display: flex;
-  padding: 80px 0 80px 250px;
-  justify-content: space-between;
-  align-items: center;
-  flex-shrink: 0;
+.info-section {
+  padding: 80px 0;
 }
 
-.container .info-section {
+.info-section-text {
   max-width: 460px;
 }
 
-.container .info-section .info-section-title {
+.info-section-text__title {
   color: var(--color-heading);
   font-size: 50px;
   font-style: normal;
@@ -50,12 +50,20 @@ export default {
   margin-bottom: 24px;
 }
 
-.container .info-section .info-section-description {
+.info-section-text__description {
   color: var(--color-text);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+}
+
+.info-section-image {
+  margin-right: -150px;
+}
+
+.info-section-image img {
+  transform: translate(250px, 0);
 }
 
 </style>

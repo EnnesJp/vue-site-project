@@ -11,11 +11,12 @@ input {
   background: var(--color-input-background);
 }
 
-.wrapper {
+.container {
   display: flex;
-  width: 100vw;
-  padding: 40px 140px;
   align-items: center;
+  max-width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .btn {
