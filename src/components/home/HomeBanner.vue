@@ -33,7 +33,7 @@
 }
 
 .container .banner-info .banner-info-title {
-  color: var(--color-text-banner);
+  color: var(--color-text-white);
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -41,7 +41,7 @@
 }
 
 .container .banner-info .banner-info-description {
-  color: var(--color-text-banner);
+  color: var(--color-text-white);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

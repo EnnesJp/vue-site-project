@@ -18,13 +18,10 @@
 <style scoped>
 
 .wrapper {
-  display: flex;
   position: absolute;
   top: 0;
-  width: 100vw;
-  padding: 40px 140px;
-  align-items: center;
 }
+
 .wrapper .navbar {
   display: flex;
   justify-content: flex-end;
