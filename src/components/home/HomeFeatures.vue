@@ -32,18 +32,18 @@ export default {
     getFeatures() {
       const features = [
         {
-          title: 'Chats for your distributed teams',
-          text: 'Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.',
+          title: this.$t('home.features.1.title'),
+          text: this.$t('home.features.1.text'),
           icon: 'features1.png',
         },
         {
-          title: 'Choose how you want to work',
-          text: 'In Team, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat, send audio and video clips, or hop on a huddle to talk things out live.',
+          title: this.$t('home.features.2.title'),
+          text: this.$t('home.features.2.text'),
           icon: 'features2.png',
         },
         {
-          title: 'Move faster with your Team tools',
-          text: 'With your other work apps connected to Team, you can work faster by switching tabs less. And with powerful tools like Workflow Builder, you can automate away routine tasks..',
+          title: this.$t('home.features.3.title'),
+          text: this.$t('home.features.3.text'),
           icon: 'features3.png',
         },
       ];

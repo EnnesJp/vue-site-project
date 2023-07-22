@@ -2,12 +2,12 @@
   <div class="banner">
     <div class="container">
       <div class="banner-info">
-        <h1 class="banner-info__title">Instant collaboration for remote teams</h1>
-        <span class="banner-info__description">All-in-one place for your remote team to chat, collaborate and track project progress.</span>
+        <h1 class="banner-info__title">{{ $t('home.banner.title') }}</h1>
+        <span class="banner-info__description">{{ $t('home.banner.description') }}</span>
         <div class="banner-info-register">
           <input class="banner-info-register__input" type="email" placeholder="Email">
           <div class="btn btn-secondary">
-            <RouterLink to="/register">Get Early Access</RouterLink>
+            <RouterLink to="/register">{{ $t('home.banner.earlyAccess') }}</RouterLink>
           </div>
         </div>
       </div>

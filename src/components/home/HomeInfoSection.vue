@@ -6,10 +6,10 @@ import ArrowIcon from '../icons/arrow.vue';
   <div class="info-section">
     <div class="container">
       <div class="info-section-text">
-        <h1 class="info-section-text__title">Chats for your distributed teams</h1>
-        <span class="info-section-text__description">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</span>
+        <h1 class="info-section-text__title">{{ $t('home.infoSection.title') }}</h1>
+        <span class="info-section-text__description">{{ $t('home.infoSection.description') }}</span>
         <div class="learn-more-link">
-          <a href="/about">Learn more</a>
+          <a href="/about">{{ $t('learnMore') }}</a>
           <ArrowIcon/>
         </div>
       </div>
