@@ -3,27 +3,27 @@
     <div class="container">
       <div class="footer-logo">
         <img src="@/assets/images/logo.png" alt="Logo">
-        <p>Collaboration platform for mordern team </p>
+        <p>{{ $t('footer.description') }}</p>
       </div>
       <div class="footer-links">
         <div class="footer-links-column">
-          <h4 class="footer-links-column-title">Company</h4>
-          <a href="#" class="footer-links-column-link">Product</a>
-          <a href="#" class="footer-links-column-link">Blog</a>
-          <a href="#" class="footer-links-column-link">Support</a>
+          <h4 class="footer-links-column-title">{{ $t('footer.company') }}</h4>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.product') }}</a>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.blog') }}</a>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.support') }}</a>
         </div>
         <div class="footer-links-column">
-          <h4 class="footer-links-column-title">Features</h4>
-          <a href="#" class="footer-links-column-link">Screen Sharing</a>
-          <a href="#" class="footer-links-column-link">iOS & Android Apps</a>
-          <a href="#" class="footer-links-column-link">File Sharing</a>
-          <a href="#" class="footer-links-column-link">User Managment</a>
+          <h4 class="footer-links-column-title">{{ $t('footer.features') }}</h4>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.screenSharing') }}</a>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.apps') }}</a>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.fileSharing') }}</a>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.userManagement') }}</a>
         </div>
         <div class="footer-links-column">
-          <h4 class="footer-links-column-title">Contact Us</h4>
-          <a href="#" class="footer-links-column-link">info@teamapp.com</a>
-          <a href="#" class="footer-links-column-link">1-800-200-300</a>
-          <a href="#" class="footer-links-column-link">1010 Sunset Blv. Palo Alto, California</a>
+          <h4 class="footer-links-column-title">{{ $t('footer.contact') }}</h4>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.email') }}</a>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.cell') }}</a>
+          <a href="#" class="footer-links-column-link">{{ $t('footer.address') }}</a>
         </div>
       </div>
       <div class="footer-social">

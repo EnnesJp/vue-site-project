@@ -13,6 +13,7 @@
   --vt-c-soft-blue: #5468E7;
   --vt-c-grayish-blue: #D1ECFD;
   --vt-c-dark-blue: #232340;
+  --vt-c-gray: rgba(235, 235, 235);
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
@@ -38,6 +39,7 @@
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
   --color-background-footer: var(--vt-c-dark-blue);
+  --color-background-hover: var(--vt-c-gray);
 
   --color-border: var(--vt-c-divider-light-2);
   --color-border-hover: var(--vt-c-divider-light-1);

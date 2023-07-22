@@ -1,16 +1,21 @@
+<script setup>
+import SelectLang from './SelectLang.vue';
+</script>
+
 <template>
   <div class="header">
     <div class="container">
       <img src="@/assets/images/logo.png" alt="Logo">
       <div class="navbar">
-        <RouterLink class="navbar__link" to="/products">Product</RouterLink>
-        <RouterLink class="navbar__link" to="/blog">Blog</RouterLink>
-        <RouterLink class="navbar__link" to="/support">Support</RouterLink>
-        <RouterLink class="navbar__link" to="/login">Login</RouterLink>
+        <RouterLink class="navbar__link" to="/products">{{ $t('nav.products') }}</RouterLink>
+        <RouterLink class="navbar__link" to="/blog">{{ $t('nav.blog') }}</RouterLink>
+        <RouterLink class="navbar__link" to="/support">{{ $t('nav.support') }}</RouterLink>
+        <RouterLink class="navbar__link" to="/login">{{ $t('nav.login') }}</RouterLink>
         <div class="btn btn-primary">
-          <RouterLink to="/register">Get Access</RouterLink>
+          <RouterLink to="/register">{{ $t('nav.register') }}</RouterLink>
         </div>
       </div>
+      <SelectLang/>
     </div>
   </div>
 </template>
@@ -22,6 +27,10 @@
   top: 0;
   width: 100vw;
   padding: 40px 0;
+}
+
+.container {
+  position: relative;
 }
 
 .navbar {
