@@ -66,4 +66,15 @@ export default {
   transform: translate(250px, 0);
 }
 
+@media screen and (max-width: 820px) {
+  .info-section-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .info-section-text__title{
+    font-size: 36px;
+  }
+}
+
 </style>

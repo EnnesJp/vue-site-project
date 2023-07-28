@@ -1,5 +1,5 @@
 <script setup>
-import SelectLang from './SelectLang.vue';
+import SelectLang from './shared/SelectLang.vue';
 </script>
 
 <template>
@@ -50,6 +50,12 @@ import SelectLang from './SelectLang.vue';
   font-weight: 500;
   line-height: 24px;
   text-decoration-line: underline;
+}
+
+@media screen and (max-width: 820px) {
+  .navbar {
+    display: none;
+  }
 }
 
 </style>

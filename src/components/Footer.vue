@@ -39,17 +39,17 @@
 
 .footer {
   position: relative;
-  height: 500px;
+  min-height: 500px;
   background: var(--color-background-footer);
   padding-top: 73px;
 }
 
-.footer .container {
+.container {
   align-items: flex-start;
   gap: 130px;
 }
 
-.footer .footer-logo p{
+.footer-logo p{
   color: var(--color-text-white);
   font-size: 14px;
   font-style: normal;
@@ -59,18 +59,18 @@
   max-width: 168px;
 }
 
-.footer .footer-links {
+.footer-links {
   display: flex;
   padding-top: 22px;
   gap: 85px;
 }
 
-.footer .footer-links .footer-links-column {
+.footer-links-column {
   display: flex;
   flex-direction: column;
 }
 
-.footer .footer-links .footer-links-column .footer-links-column-title {
+.footer-links-column-title {
   color: var(--color-heading-footer);
   font-size: 24px;
   font-style: normal;
@@ -79,7 +79,7 @@
   margin-bottom: 16px;
 }
 
-.footer .footer-links .footer-links-column .footer-links-column-link {
+.footer-links-column-link {
   color: var(--color-text-white);
   font-size: 14px;
   font-style: normal;
@@ -90,9 +90,20 @@
   margin-bottom: 12px;
 }
 
-.footer .footer-social {
+.footer-social {
   display: flex;
   gap: 12px;
+}
+
+@media screen and (max-width: 820px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 </style>

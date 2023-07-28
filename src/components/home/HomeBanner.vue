@@ -60,4 +60,16 @@
   width: 298px;
 }
 
+@media screen and (max-width: 480px) {
+  .banner-info__title {
+    font-size: 42px;
+  }
+  .banner-info-register {
+    flex-direction: column;
+  }
+  .banner-info-register__input {
+    width: 100%;
+  }
+}
+
 </style>

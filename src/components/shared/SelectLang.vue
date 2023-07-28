@@ -1,5 +1,5 @@
 <script setup>
-import Arrow from './icons/smallArrow.vue';
+import Arrow from '../icons/smallArrow.vue';
 </script>
 
 <template>
@@ -127,5 +127,11 @@ export default {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+
+@media screen and (max-width: 820px) {
+  .language-selector {
+    display: none;
+  }
 }
 </style>

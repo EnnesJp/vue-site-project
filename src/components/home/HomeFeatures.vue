@@ -99,4 +99,26 @@ export default {
   margin-bottom: 51px;
 }
 
+@media screen and (max-width: 820px) {
+  .feature-section {
+    flex-direction: column;
+  }
+  .feature-section:nth-child(even) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feature-section {
+    gap: 80px;
+  }
+  .feature-section__image {
+    max-width: 360px;
+    max-height: 360px;
+  }
+  .feature-section-info__title {
+    font-size: 36px
+  }
+}
+
 </style>
