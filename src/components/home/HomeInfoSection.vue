@@ -63,7 +63,7 @@ export default {
 }
 
 .info-section-image img {
-  transform: translate(250px, 0);
+  transform: translate(265px, 0);
 }
 
 @media screen and (max-width: 820px) {

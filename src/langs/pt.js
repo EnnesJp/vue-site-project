@@ -52,4 +52,14 @@ export default {
       }
     }
   },
+  login: {
+    title: 'Bem-vindo de volta!',
+    description: 'Faça login para continuar',
+    email: 'E-mail',
+    password: 'Senha',
+    login: 'Login',
+    forgotPassword: 'Esqueceu a senha?',
+    register: 'Criar Conta',
+    alternative: 'Ou',
+  },
 };

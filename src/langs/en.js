@@ -52,4 +52,14 @@ export default {
       }
     }
   },
+  login: {
+    title: 'Welcome back!',
+    description: 'Log in to continue',
+    email: 'Email',
+    password: 'Password',
+    login: 'Login',
+    forgotPassword: 'Forgot Password?',
+    register: 'Register',
+    alternative: 'Or',
+  },
 };

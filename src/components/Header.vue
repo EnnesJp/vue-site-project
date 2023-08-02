@@ -3,9 +3,9 @@ import SelectLang from './shared/SelectLang.vue';
 </script>
 
 <template>
-  <div class="header">
+  <div :class="isFilled ? 'header filled' : 'header'">
     <div class="container">
-      <img src="@/assets/images/logo.png" alt="Logo">
+      <img src="@/assets/images/logo.png" class="header__logo" alt="Logo" @click="$router.push('/')">
       <div class="navbar">
         <RouterLink class="navbar__link" to="/products">{{ $t('nav.products') }}</RouterLink>
         <RouterLink class="navbar__link" to="/blog">{{ $t('nav.blog') }}</RouterLink>
@@ -20,6 +20,19 @@ import SelectLang from './shared/SelectLang.vue';
   </div>
 </template>
 
+<script>
+
+export default {
+  name: 'Header',
+  computed: {
+    isFilled() {
+      return this.$route.meta.filledMenu;
+    }
+  }
+}
+
+</script>
+
 <style scoped>
 
 .header {
@@ -27,6 +40,14 @@ import SelectLang from './shared/SelectLang.vue';
   top: 0;
   width: 100vw;
   padding: 40px 0;
+}
+
+.header__logo {
+  cursor: pointer;
+}
+
+.filled {
+  background-color: var(--color-background-header);
 }
 
 .container {

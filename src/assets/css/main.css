@@ -41,6 +41,15 @@ input {
   background: var(--color-background-btn-secondary);
 }
 
+.btn-alternative {
+  background: transparent;
+  border: 2px solid var(--color-background-btn-secondary);
+}
+
+.btn-alternative a {
+  color: var(--color-text-btn-alternative);
+}
+
 .learn-more-link {
   margin-top: 46px;
   display: flex;
